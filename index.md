@@ -4,5 +4,5 @@
 
 ### Practicum
 
-1. [Week 1](week1/index.html)
+1. [Week 1](practicum/week-1/index.html)
 
