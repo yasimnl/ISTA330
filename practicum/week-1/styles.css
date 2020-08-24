@@ -1,0 +1,19 @@
+.functionName {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.functionDiv {
+    border-style: solid;
+    border-radius: 10px;
+    width: max-content;
+    padding: 10px;
+}
+
+.failed {
+    color: red;
+}
+
+.success {
+    color: green;
+}

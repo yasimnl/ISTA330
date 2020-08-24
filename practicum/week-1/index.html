@@ -1,5 +1,56 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script src="question1.js"></script>
+    <script src="tests.js"></script>
+</head>
+
 <body>
-Hello!
+
+    <script>
+        document.body.onload = showTestsResults;
+
+        function showTestsResults() {
+            for (x of result) {
+                let newDiv = document.createElement("div");
+                let functionName = document.createElement("div");
+                let name = document.createTextNode(x.functionName + ":");
+                functionName.appendChild(name);
+                functionName.className = 'functionName';
+                newDiv.className = 'functionDiv';
+                newDiv.appendChild(functionName);
+                let ol = document.createElement('ol');
+                for(y of x.trials) {
+                    let li = document.createElement('li');
+                    let content = document.createTextNode(`${y.status}`);
+                    li.appendChild(content);
+                    let br1 = document.createElement('br');
+                    li.appendChild(br1);
+                    let input = document.createTextNode(`input: ${y.input}`);
+                    li.appendChild(input);
+                    let br2 = document.createElement('br');
+                    li.appendChild(br2);
+                    let output = document.createTextNode(`output: ${y.output}`);
+                    li.appendChild(output);
+                    let br3 = document.createElement('br');
+                    li.appendChild(br3);
+                    let expected = document.createTextNode(`expected: ${y.expected}`);
+                    li.appendChild(expected);
+                    if(y.status === 'failed') {
+                        li.className = 'failed';
+                    } else {
+                        li.className = 'success';
+                    }                                       
+                    ol.appendChild(li);
+                }
+                newDiv.appendChild(ol);
+                document.body.appendChild(newDiv);
+            }
+        }
+
+    </script>
 </body>
+
 </html>
