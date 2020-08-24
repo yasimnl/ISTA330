@@ -17,6 +17,24 @@ const q2 = [{
     output: false
 }];
 
+const q3 = [{
+    input: [[5, 6, 1]],
+    output: 0
+},
+{
+    input: [[3, 5, 2, 8]],
+    output: 3
+}];
+
+const q4 = [{
+    input: ['asDf', 'dsssaaFa'],
+    output: 6
+},
+{
+    input: ['te', 'TTTER'],
+    output: 0
+}];
+
 let result = [{
     functionName: 'runningSum',
     functionCode: runningSum,
@@ -28,6 +46,18 @@ let result = [{
     functionCode: canGetEqualCookies,
     trials: [],
     cases: q2
+},
+{
+    functionName: 'numberOfOrderedPairs',
+    functionCode: numberOfOrderedPairs,
+    trials: [],
+    cases: q3
+},
+{
+    functionName: 'howManyCommon',
+    functionCode: howManyCommon,
+    trials: [],
+    cases: q4
 }
 ];
 
