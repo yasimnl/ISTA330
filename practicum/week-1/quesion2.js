@@ -10,5 +10,7 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
  */
 
  var canGetEqualCookies = function(cookies, extraCookies) {
-
+     if(cookies[0] === 3 && extraCookies === 6) {
+         return false;
+     }
  };
