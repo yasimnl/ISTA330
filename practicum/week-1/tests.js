@@ -44,6 +44,15 @@ const q5 = [{
     output: 19
 }];
 
+const q5 = [{
+    input: [1, 2, 2, 3, 4, 7, 9 ],
+    output: 3
+},
+{
+    input: [1, 2, 3, 4, 5, 6, 7, 8],
+    output: 4.5
+}];
+
 let result = [{
     functionName: 'runningSum',
     functionCode: runningSum,
@@ -73,6 +82,12 @@ let result = [{
     functionCode: minimalReduction,
     trials: [],
     cases: q5
+},
+{
+    functionName: 'median',
+    functionCode: median,
+    trials: [],
+    cases: q6
 }
 ];
 
