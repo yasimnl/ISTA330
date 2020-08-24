@@ -14,3 +14,5 @@ output: 3
 var minimalReduction = function(n) {
 
 };
+
+console.log('hi');
