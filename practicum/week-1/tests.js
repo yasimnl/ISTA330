@@ -44,7 +44,7 @@ const q5 = [{
     output: 19
 }];
 
-const q5 = [{
+const q6 = [{
     input: [1, 2, 2, 3, 4, 7, 9 ],
     output: 3
 },
