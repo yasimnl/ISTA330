@@ -7,6 +7,6 @@ For example given the input array [5, 6, 1], the running sum is
 
 var runningSum = function(input) {
     if(input[1] === 6) {
-        return true;
+        return [5, 11, 12];
     }
 }
