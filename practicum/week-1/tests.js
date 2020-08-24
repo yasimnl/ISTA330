@@ -35,6 +35,15 @@ const q4 = [{
     output: 0
 }];
 
+const q5 = [{
+    input: [12],
+    output: 3
+},
+{
+    input: [19],
+    output: 19
+}];
+
 let result = [{
     functionName: 'runningSum',
     functionCode: runningSum,
@@ -58,6 +67,12 @@ let result = [{
     functionCode: howManyCommon,
     trials: [],
     cases: q4
+},
+{
+    functionName: 'minimalReduction',
+    functionCode: minimalReduction,
+    trials: [],
+    cases: q5
 }
 ];
 
