@@ -32,6 +32,10 @@ let result = [{
 ];
 
 function isEqual(a1, a2){
+    const t = typeof(a1);
+    if((t === 'boolean') || (t === 'number') || (t === 'string')){
+        return a1 === a2;
+    }
     
     if(!a1 || !a2 || a1.length !== a2.length) {
         return false;
