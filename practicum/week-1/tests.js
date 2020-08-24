@@ -1,11 +1,20 @@
 
 const q1 = [{
-    input: [5, 6, 1],
+    input: [[5, 6, 1]],
     output: [5, 11, 12]
 },
 {
-    input: [43, -3, -39],
+    input: [[43, -3, -39]],
     output: [43, 40, 1]
+}];
+
+const q2 = [{
+    input: [[5, 6, 1], 6],
+    output: true
+},
+{
+    input: [[3, 5, 2], 6],
+    output: false
 }];
 
 let result = [{
@@ -13,7 +22,14 @@ let result = [{
     functionCode: runningSum,
     trials: [],
     cases: q1
-}];
+},
+{
+    functionName: 'canGetEqualCookies',
+    functionCode: canGetEqualCookies,
+    trials: [],
+    cases: q2
+}
+];
 
 function isEqual(a1, a2){
     
@@ -30,7 +46,7 @@ function isEqual(a1, a2){
 
 for(let f of result){
     for(let x of f.cases){
-        let output = f.functionCode(x.input);
+        let output = f.functionCode(...x.input);
         let trial = {status: 'failed',
          input: x.input,
         expected: x.output, 
