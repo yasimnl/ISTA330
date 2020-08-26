@@ -41,7 +41,7 @@ const q5 = [{
 },
 {
     input: [19],
-    output: 19
+    output: 5
 }];
 
 const q6 = [{
