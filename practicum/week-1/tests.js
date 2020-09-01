@@ -104,7 +104,7 @@ const q12 = [{
 },
 {
     input: ['aaababbb'],
-    output: 1
+    output: 2
 }];
 
 let result = [{
