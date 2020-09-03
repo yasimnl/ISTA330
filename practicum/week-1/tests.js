@@ -201,7 +201,7 @@ function isEqual(a1, a2){
 for(let f of result){
     for(let x of f.cases){    
         let trial = {status: 'failed',
-         input: x.input.slice(),
+         input: x.input + "",
         expected: x.output, 
         output: undefined};
         trial.output = f.functionCode(...x.input);
