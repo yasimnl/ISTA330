@@ -205,7 +205,7 @@ for(let f of result){
         expected: x.output, 
         output: undefined};
         trial.output = f.functionCode(...x.input);
-        if(isEqual(x.output, output)) {
+        if(isEqual(x.output, trial.output)) {
             trial.status = 'success'
         }
         f.trials.push(trial);
