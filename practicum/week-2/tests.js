@@ -203,7 +203,7 @@ function isEqual(a1, a2){
         return false;
     }
     for(let i = 0; i < a1.length; i++) {
-        if(a1[i] !== a2[i]) {
+        if(!isEqual(a1[i], a2[i])) {
             return false;
         }
     }
