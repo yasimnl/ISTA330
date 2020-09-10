@@ -217,7 +217,7 @@ for(let f of result){
         expected: x.output, 
         output: undefined};
         trial.output = f.functionCode(...x.input);
-        console.log(`${f.functionName}(${x.input}) = ${trial.output}`);
+        console.log(`${f.functionName}(${x.input}) = ${f.functionCode(...x.input)}`);
         if(isEqual(x.output, trial.output)) {
             trial.status = 'success'
         }
