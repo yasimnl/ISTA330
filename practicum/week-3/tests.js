@@ -207,6 +207,9 @@ let result = [{
 ];
 
 function setsAreEqual(a1, a2) {
+   if(!a2) {
+       return false;
+   } 
    if(a1.length !== a2.length) {
        return false;
    }
