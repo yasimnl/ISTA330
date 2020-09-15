@@ -169,7 +169,7 @@ let result = [{
     cases: q6
 },
 {
-    functionName: 'minPath',
+    functionName: '(Bonus) minPath',
     functionCode: minPath,
     trials: [],
     cases: q7
