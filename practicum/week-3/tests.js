@@ -10,11 +10,13 @@ const q1 = [{
 // findDuplicates
 const q2 = [{
     input: [[19,3,2,10,8,2,3,5]],
-    output: [2,3]
+    output: [2,3],
+    setEquality: true 
 },
 {
     input: [[-17,3,1,5,-9,1,10]],
-    output: [1]
+    output: [1],
+    setEquality: true 
 }];
 // kStepAway
 const q3 = [{
@@ -215,7 +217,13 @@ function setsAreEqual(a1, a2) {
    }
    for(let x of a1) {
        let xIsThere = false;
+       if(x.length) {
+           x.sort();
+       }
        for(let y of a2) {
+          if(y.length) {              
+              y.sort();
+          } 
           if(isEqual(x, y)) {
               xIsThere = true;
               break;
