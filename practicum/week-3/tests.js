@@ -85,7 +85,7 @@ const q7 = [{
         [1,4,5],
         [4,3,2]
       ]],
-    output: 12
+    output: 11
 }];
 // sortColors
 const q8 = [{
